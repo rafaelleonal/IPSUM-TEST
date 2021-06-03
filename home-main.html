@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>IPSUM</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor-header">
+            <img class="header-icon" src="./assets/images/logo-ipsum.png" alt="Icono Media Source">
+
+            <!--Comienza el navbar-->
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/Icons/bell-white.png" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/Icons/help-white.png" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/images/Icons/avatar-elipse.png" alt="" srcset="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contenedor-busqueda">
+            <div class="contenedor-busqueda-izq">
+                <picture>
+                    <img src="./assets/images/lock-logo.png" alt="Logo Ipsum">
+                </picture>
+                <div class="busqueda-resultados">
+                    <h1>Quierocasa</h1>
+                    <picture>
+                        <img src="./assets/images/Icons/grua-blue.png" alt="">
+                        25
+                    </picture>
+                    <picture>
+                        <img src="./assets/images/Icons/persona-blue.png" alt="">
+                        71
+                    </picture>
+                    <picture>
+                        <img src="./assets/images/Icons/dollar-blue.png" alt="">
+                        891.308.499.537 MXN
+                    </picture>
+                </div>
+            </div>
+            <div class="contenedor-busqueda-der">
+                <div class="input-busqueda">
+                    <input type="search" placeholder="Buscar">
+                    <input class="btn-search" type="button">
+                </div>
+                <div class="input-crear">
+                    <a class="btn-crear-proyecto" href="#">
+                        <button class=""></button>
+                        Crear proyecto
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-busqueda-movil">
+            <div class="contenedor-input-busqueda-izq">
+                <picture>
+                    <img src="./assets/images/lock-logo.png" alt="">
+                </picture>
+                <div class="input-busqueda">
+                    <input type="search" placeholder="Buscar">
+                    <input class="btn-search" type="button">
+                </div>
+            </div>
+            <div class="contenedor-input-busqueda-der">
+                <div class="input-crear">
+                    <a class="btn-crear-proyecto" href="#">
+                        <button class=""></button>
+                        Crear proyecto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Comienza la seccion Proyectos -->
+
+    <main>
+
+        <section class="section-proyectos">
+            <div class="">
+                <!--Contenedor Proyectos Header -->
+                <div class="contenedor-proyectos-header">
+                    <div class="contenedor-proyectos-titulo flex">
+                        <picture>
+                            <img src="./assets/images/Icons/grua.png" alt="Logo grua">
+                        </picture>
+                        <h3>Proyectos</h3>
+                        <h4>(Todos)</h4>
+                    </div>
+                    <div class="contenedor-proyectos-filtros">
+                        <button class="btn-filtrar">
+                            <picture>
+                                <img src="./assets/images/Icons/filter-grey.png" alt="Logo filtro" srcset="">
+                            </picture>
+                        </button>
+                        <a href="">
+                            <picture>
+                                <img src="./assets/images/Icons/block-list.png" alt="Logo filtro" srcset="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contenedor-filtros hidden">
+                    <div class="contenedor-filtros-header">
+                        <div class="flex">
+                            <picture>
+                                <img src="./assets/images/Icons/filter-black.png" alt="Logo grua">
+                            </picture>
+                            <h3>Filtros y Orden</h3>
+                            <h4>(Iniciado, de la A a la Z)</h4>
+                        </div>
+                        <div>
+                            <button class="btn-cerrar">
+                                <picture>
+                                    <img src="./assets/images/Icons/close-blue.png" alt="Logo filtro" srcset="">
+                                </picture>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contenedor-inputs-filtros flex">
+                        <label for="">Estado:</label>
+                        <select name="" id="">
+                            <option value="Iniciado">Iniciado</option>
+                        </select>
+                        <label for="">Nombre:</label>
+                        <select name="" id="">
+                            <option value="Alfabeto">A a la Z</option>
+                        </select>
+                        <label for="">Fecha:</label>
+                        <select name="" id="">
+                            <option value="Escoge una opción">Escoge una opción</option>
+                        </select>
+                        <label for="">Tamaño:</label>
+                        <select name="" id="">
+                            <option value="Escoge una opción">Escoge una opción</option>
+                        </select>
+                    </div>
+                    <div class="contenedor-filtros-footer flex">
+                        <div class="input-limpiar-filtros">
+                            <a class="btn-limpiar-filtros flex" href="#">
+                                <button class=""></button>
+                                Limpiar filtros
+                            </a>
+                        </div>
+                        <div class="input-aplicar-filtros">
+                            <a class="btn-aplicar-filtros flex" href="home-filtered.html">
+                                <button class=""></button>
+                                Aplicar filtros
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor-cards">
+                    <!--Contenedor Cards-->
+                    <div class="contenedor-fila">
+                        <div class="card">
+                            <!--Card 1-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-iniciado">Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-filled.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 2-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-no-iniciado">No Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-filled.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 3-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-detenido">Detenido</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-filled.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 4-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-finalizado">Finalizado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Segunda fila de cards -->
+
+                <div class="contenedor-cards">
+                    <!--Contenedor Cards-->
+                    <div class="contenedor-fila">
+                        <div class="card">
+                            <!--Card 1-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-iniciado">Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 2-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-iniciado">Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 3-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-iniciado">Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 4-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-no-iniciado">No Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Tercer fila de cards -->
+
+                <div class="contenedor-cards">
+                    <!--Contenedor Cards-->
+                    <div class="contenedor-fila">
+                        <div class="card">
+                            <!--Card 1-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-no-iniciado">No Iniciado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 2-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-detenido">Detenido</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 3-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-finalizado">finalizado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--Card 4-->
+                            <div class="card-image">
+                                <div class="card-status">
+                                    <span class="label-finalizado">Finalizado</span>
+                                    <picture>
+                                      <img src="./assets/images/Icons/star-white.png" alt="Icono estrella">
+                                    </picture>
+                                </div>
+                                <div class="card-fecha">
+                                    <picture>
+                                        <img src="./assets/images/Icons/calendar-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>03/04/21</h5>
+                                    <picture>
+                                        <img src="./assets/images/Icons/person-white.png" alt="" srcset="">
+                                    </picture>
+                                    <h5>18</h5>
+                                </div>
+                                <div class="card-name">
+                                    <div class="card-title">
+                                        <h4>Nombre del proyecto</h4>
+                                    </div>
+                                    <div class="card-text">
+                                        <p>Dirección del proyecto, ubicación</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-main">
+                                <div class="card-price">
+                                    <picture>
+                                        <img src="./assets/images/Icons/dollar-blue.png" alt="" srcset="">
+                                        <h6>2.000.030 USD</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ruler-blue.png" alt="" srcset="">
+                                        <h6>960m2</h6>
+                                    </picture>
+                                </div>
+                                <div class="card-price-after"></div>
+                                <div class="card-extras">
+                                    <picture>
+                                        <img src="./assets/images/Icons/check-blue.png" alt="" srcset="">
+                                        <h6>81%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/ppc-blue.png" alt="" srcset="">
+                                        <h6>15%</h6>
+                                    </picture>
+                                    <picture>
+                                        <img src="./assets/images/Icons/pcr-blue.png" alt="" srcset="">
+                                        <h6>46%</h6>
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                
+            </div>
+        </section>
+
+    </main>
+
+    <section class="section-preguntas">
+        <a href="">
+            <picture>
+                <img src="./assets/images/Icons/chat-blue.png" alt="Chatea con nosotros">
+            </picture>
+        </a>
+    </section>
+
+    <!--Comienza el footer-->
+
+    <footer class="footer"></footer>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
